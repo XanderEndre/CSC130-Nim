@@ -6,19 +6,15 @@
  */
 package io.github.csc130.game;
 
-import io.github.csc130.players.PlayerParent;
-
-import java.util.ArrayList;
-
 public class Game {
 
-    private final GameBoard gameBoard;
-    private final ArrayList<PlayerParent> players = new ArrayList<>();
-    private int turn;
+	private final GameBoard gameBoard = new GameBoard(10);
+	private final int[] players = new int[2];
+	private int turn;
 
-    public Game() {}
+	public Game() {}
 
-    public void run() {
+	public void run() {
 
-    }
+	}
 }
