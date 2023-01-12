@@ -7,8 +7,8 @@ import java.io.InputStreamReader;
 public class ConsoleInterface implements UserInterface {
 	private BufferedReader bRead = new BufferedReader(new InputStreamReader(System.in));
 
-	public String getInput(String prompt) {
-		System.out.println(prompt);
+	private String getInput(String prompt) {
+		System.out.print(prompt);
 
 		String input = "";
 		try {
@@ -19,7 +19,7 @@ public class ConsoleInterface implements UserInterface {
 		return input;
 	}
 
-	public int getInt(String prompt) {
+	private int getInt(String prompt) {
 		String input = getInput(prompt);
 		int inputValue;
 		try {
@@ -29,5 +29,15 @@ public class ConsoleInterface implements UserInterface {
 			inputValue = getInt(prompt);
 		}
 		return inputValue;
+	}
+
+	@Override
+	public int getPlayerMove() {
+		return getInt("How many pieces do you want to take? ");
+	}
+
+	@Override
+	public void displayBoard(int board) {
+		System.out.println("There are " + board + " pieces left");
 	}
 }
