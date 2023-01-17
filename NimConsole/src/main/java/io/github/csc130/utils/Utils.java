@@ -8,21 +8,50 @@ package io.github.csc130.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Utils {
 
-    BufferedReader bufferedReader = new BufferedReader();
+    private static BufferedReader bRead = new BufferedReader(new InputStreamReader(System.in));
 
-    private String getMessage(String message, boolean required) throws IOException {
-        String response = null;
-        do {
-            System.out.println(message);
-            response = bufferedReader.readLine();
-            if (response.isBlank() || required) {
-                response = null;
-                System.out.println("Error // A valid response is required");
+    public static int getInt(String prompt, int min, int max) {
+        String input = getString(prompt, true);
+
+        int inputValue = 0;
+        boolean validInput = false;
+        while (!validInput) {
+            try {
+                inputValue = Integer.parseInt(input);
+                if (inputValue >= min && inputValue <= max) {
+                    validInput = true;
+                } else {
+                    System.out.println("You must enter a number between " + min + " and " + max);
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("You must enter a whole number");
             }
-        } while (response == null);
-        return response;
+        }
+        return inputValue;
     }
+
+    public static String getString(String prompt, boolean required) {
+        System.out.print(prompt);
+
+        String input = "";
+        boolean validInput = false;
+        while (!validInput) {
+            try {
+                input = bRead.readLine();
+                if (!input.isBlank() || required) {
+                    validInput = true;
+                } else {
+                    System.out.println("You must enter something");
+                }
+            } catch (IOException e) {
+                System.out.println("Error reading input");
+            }
+        }
+        return input;
+    }
+
 }

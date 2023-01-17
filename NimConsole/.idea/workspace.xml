@@ -43,7 +43,12 @@
     "WebServerToolWindowFactoryState": "false",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/Xander/IdeaProjects/CSC130/Waterfall/CSC130-Nim/NimConsole",
+    "last_opened_file_path": "C:/Users/Xander/IdeaProjects/Object Orientated Programming/ConnectFour",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -57,7 +62,9 @@
       <updated>1673556557359</updated>
       <workItem from="1673556558630" duration="45000" />
       <workItem from="1673556613201" duration="254000" />
-      <workItem from="1673557465195" duration="814000" />
+      <workItem from="1673557465195" duration="928000" />
+      <workItem from="1673800210003" duration="1841000" />
+      <workItem from="1673987965145" duration="4815000" />
     </task>
     <servers />
   </component>
