@@ -6,18 +6,55 @@
  */
 package io.github.csc130.game;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class GameBoard {
-	/**
-	 * The value of an index represents the number of pieces in that pile
-	 */
-	int[] piles = new int[3];
+    /**
+     * The value of an index represents the number of pieces in that pile
+     */
+    int[] piles;
+    int maxPieces;
 
-	public GameBoard(int maxPieces) {
-		Random random = new Random();
-		for (int pile : piles) {
-			pile = random.nextInt(maxPieces) + 1;
-		}
-	}
+    public GameBoard(int numPiles, int maxPieces) {
+        piles = new int[numPiles];
+        this.maxPieces = maxPieces;
+    }
+
+
+    public void subtractFromPile(int pile, int quantity, String name) {
+        piles[pile - 1] -= quantity;
+
+        System.out.println(name + " took " + quantity + " from pile " + pile + "! Remaining pieces: " + piles[pile - 1]);
+    }
+
+    public void resetGame() {
+        emptyPiles();
+        fillPiles();
+    }
+
+    public int[] getPiles() {
+        return piles;
+    }
+
+    public void displayPiles() {
+        for (int i = 0; i < piles.length; i++) {
+            System.out.println("Pile " + (i + 1) + ": " + piles[i] + " pieces");
+        }
+    }
+
+    public void fillPiles() {
+        Random random = new Random();
+        for (int i = 0; i < piles.length; i++) {
+            piles[i] = random.nextInt(maxPieces) + 1;
+        }
+    }
+
+    public void emptyPiles() {
+        Arrays.fill(piles, 0);
+    }
+
+    public boolean checkWin() {
+        return Arrays.stream(piles).allMatch(i -> i == 0);
+    }
 }

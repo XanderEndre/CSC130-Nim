@@ -8,11 +8,11 @@ package io.github.csc130.players;
 
 import io.github.csc130.game.GameBoard;
 
-public abstract class PlayerParent {
+public abstract class Player {
 
     private String name;
 
-    public PlayerParent(String name) {
+    public Player(String name) {
         this.name = name;
     }
 

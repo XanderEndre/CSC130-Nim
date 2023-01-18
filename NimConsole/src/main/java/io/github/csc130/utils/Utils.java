@@ -15,12 +15,11 @@ public class Utils {
     private static BufferedReader bRead = new BufferedReader(new InputStreamReader(System.in));
 
     public static int getInt(String prompt, int min, int max) {
-        String input = getString(prompt, true);
-
         int inputValue = 0;
         boolean validInput = false;
         while (!validInput) {
             try {
+                String input = getString(prompt);
                 inputValue = Integer.parseInt(input);
                 if (inputValue >= min && inputValue <= max) {
                     validInput = true;
@@ -34,7 +33,7 @@ public class Utils {
         return inputValue;
     }
 
-    public static String getString(String prompt, boolean required) {
+    public static String getString(String prompt) {
         System.out.print(prompt);
 
         String input = "";
@@ -42,7 +41,7 @@ public class Utils {
         while (!validInput) {
             try {
                 input = bRead.readLine();
-                if (!input.isBlank() || required) {
+                if (!input.isBlank()) {
                     validInput = true;
                 } else {
                     System.out.println("You must enter something");
