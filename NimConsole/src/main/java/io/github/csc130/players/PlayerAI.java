@@ -31,7 +31,7 @@ public class PlayerAI extends Player {
             }
         }
         gameBoard.subtractFromPile(pile,
-                gameBoard.getPiles().length == 1 ? 1 : new Random().nextInt(1, gameBoard.getPiles()[pile - 1] >= 2 ? 2 : 1),
+                gameBoard.getPiles().length == 1 ? 1 : (new Random().nextInt(1, 2)),
                 getName());
     }
 }
