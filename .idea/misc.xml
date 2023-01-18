@@ -4,7 +4,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/NimFX/pom.xml" />
-        <option value="$PROJECT_DIR$/NimConsole/pom.xml" />
       </list>
     </option>
   </component>
