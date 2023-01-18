@@ -1,7 +1,6 @@
 package io.github.csc130.views;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 import static io.github.csc130.utils.Utils.getInt;

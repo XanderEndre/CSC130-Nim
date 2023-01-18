@@ -9,11 +9,9 @@ package io.github.csc130.players;
 import io.github.csc130.game.GameBoard;
 import io.github.csc130.utils.Utils;
 
-import java.util.Random;
+public class PlayerHuman extends Player {
 
-public class PlayerAI extends Player {
-
-    public PlayerAI(String name) {
+    public PlayerHuman(String name) {
         super(name);
     }
 
@@ -22,7 +20,7 @@ public class PlayerAI extends Player {
         boolean validPile = false;
         int pile = 0;
         while (!validPile) {
-            pile = gameBoard.getPiles().length == 1 ? 1 : new Random().nextInt(1, gameBoard.getPiles().length);
+            pile = Utils.getInt(getName() + " which pile would you like to pick from: ", 1, gameBoard.getPiles().length);
 
             if (gameBoard.getPiles()[pile - 1] != 0) {
                 validPile = true;
@@ -30,8 +28,6 @@ public class PlayerAI extends Player {
                 System.out.println("You must choose a pile that has at least one piece!");
             }
         }
-        gameBoard.subtractFromPile(pile,
-                gameBoard.getPiles().length == 1 ? 1 : (new Random().nextInt(1, 2)),
-                getName());
+        gameBoard.subtractFromPile(pile, Utils.getInt("How many pieces do you want to take: ", 1, gameBoard.getPiles()[pile - 1] >= 2 ? 2 : 1), getName());
     }
 }
