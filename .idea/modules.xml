@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CSC130-Nim.iml" filepath="$PROJECT_DIR$/.idea/CSC130-Nim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NimConsole/NimConsole.iml" filepath="$PROJECT_DIR$/NimConsole/NimConsole.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NimFX/NimFX.iml" filepath="$PROJECT_DIR$/NimFX/NimFX.iml" />
+    </modules>
+  </component>
+</project>

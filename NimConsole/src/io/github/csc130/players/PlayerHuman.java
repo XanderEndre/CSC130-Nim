@@ -9,8 +9,6 @@ package io.github.csc130.players;
 import io.github.csc130.game.GameBoard;
 import io.github.csc130.utils.Utils;
 
-import static io.github.csc130.utils.Utils.getInt;
-
 public class PlayerHuman extends Player {
 
     public PlayerHuman(String name) {

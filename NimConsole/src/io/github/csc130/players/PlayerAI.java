@@ -7,7 +7,6 @@
 package io.github.csc130.players;
 
 import io.github.csc130.game.GameBoard;
-import io.github.csc130.utils.Utils;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
