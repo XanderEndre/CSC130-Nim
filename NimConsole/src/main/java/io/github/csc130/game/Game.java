@@ -52,7 +52,7 @@ public class Game {
 					gameActive = true;
 				}
 				case "cvc" -> {
-					players.add(new PlayerHuman(Utils.getString("Enter the first computers name: ")));
+					players.add(new PlayerAI(Utils.getString("Enter the first computers name: ")));
 					players.add(new PlayerAI(Utils.getString("Enter the second computers name: ")));
 					gameActive = true;
 				}

@@ -24,12 +24,12 @@ public class PlayerHuman extends Player {
         while (!validPile) {
             pile = Utils.getInt(getName() + " which pile would you like to pick from: ", 1, gameBoard.getPiles().length);
 
-            if (gameBoard.getPiles()[pile - 1] != 0) {
+            if (gameBoard.getPiles()[pile - 1] > 0) {
                 validPile = true;
             } else {
-                System.out.println("You must choose a pile that has at least one piece!");
+                System.out.println("PLAYER // You must choose a pile that has at least one piece!");
             }
         }
-        gameBoard.subtractFromPile(pile, Utils.getInt("How many pieces do you want to take: ", 1, gameBoard.getPiles()[pile - 1] >= 2 ? 2 : 1), getName());
+        gameBoard.subtractFromPile(pile - 1, Utils.getInt("How many pieces do you want to take: ", 1, gameBoard.getPiles()[pile - 1] >= 2 ? 2 : 1), getName());
     }
 }

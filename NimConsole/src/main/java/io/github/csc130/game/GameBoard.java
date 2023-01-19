@@ -21,11 +21,10 @@ public class GameBoard {
         this.maxPieces = maxPieces;
     }
 
-
     public void subtractFromPile(int pile, int quantity, String name) {
-        piles[pile - 1] -= quantity;
+        piles[pile] -= quantity;
 
-        System.out.println(name + " took " + quantity + " from pile " + pile + "! Remaining pieces: " + piles[pile - 1]);
+        System.out.println(name + " took " + quantity + " from pile " + pile + "! Remaining pieces: " + piles[pile]);
     }
 
     public void resetGame() {
@@ -57,4 +56,5 @@ public class GameBoard {
     public boolean checkWin() {
         return Arrays.stream(piles).allMatch(i -> i == 0);
     }
+
 }

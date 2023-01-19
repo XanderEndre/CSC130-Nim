@@ -86,11 +86,25 @@
       <workItem from="1673800210003" duration="1841000" />
       <workItem from="1673987965145" duration="4831000" />
       <workItem from="1674016209529" duration="5702000" />
-      <workItem from="1674057539891" duration="277000" />
+      <workItem from="1674057539891" duration="343000" />
+      <workItem from="1674057946519" duration="257000" />
+      <workItem from="1674073932064" duration="3475000" />
+      <workItem from="1674160917646" duration="1576000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/io/github/csc130/players/PlayerAI.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
