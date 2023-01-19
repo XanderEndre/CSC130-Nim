@@ -4,7 +4,7 @@
  * @projectName NimConsole
  * @packageName io.github.csc130.game;
  */
-package io.github.csc130.game;
+package main.io.github.csc130.game;
 
 import java.util.Arrays;
 import java.util.Random;

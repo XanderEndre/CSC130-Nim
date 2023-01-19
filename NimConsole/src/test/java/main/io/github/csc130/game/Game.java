@@ -4,12 +4,12 @@
  * @projectName NimConsole
  * @packageName io.github.csc130.game;
  */
-package io.github.csc130.game;
+package main.io.github.csc130.game;
 
-import io.github.csc130.players.PlayerAI;
-import io.github.csc130.players.PlayerHuman;
-import io.github.csc130.players.Player;
-import io.github.csc130.utils.Utils;
+import main.io.github.csc130.players.PlayerAI;
+import main.io.github.csc130.players.PlayerHuman;
+import main.io.github.csc130.players.Player;
+import main.io.github.csc130.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -4,10 +4,10 @@
  * @projectName NimConsole
  * @packageName io.github.csc130.players;
  */
-package io.github.csc130.players;
+package main.io.github.csc130.players;
 
-import io.github.csc130.game.GameBoard;
-import io.github.csc130.utils.Utils;
+import main.io.github.csc130.game.GameBoard;
+import main.io.github.csc130.utils.Utils;
 
 public class PlayerHuman extends Player {
 

@@ -4,9 +4,9 @@
  * @projectName NimConsole
  * @packageName io.github.csc130.players;
  */
-package io.github.csc130.players;
+package main.io.github.csc130.players;
 
-import io.github.csc130.game.GameBoard;
+import main.io.github.csc130.game.GameBoard;
 
 public abstract class Player {
 

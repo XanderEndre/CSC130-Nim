@@ -4,13 +4,11 @@
  * @projectName NimConsole
  * @packageName io.github.csc130.players;
  */
-package io.github.csc130.players;
+package main.io.github.csc130.players;
 
-import io.github.csc130.game.GameBoard;
+import main.io.github.csc130.game.GameBoard;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
 
 public class PlayerAI extends Player {

@@ -4,7 +4,7 @@
  * @projectName NimConsole
  * @packageName io.github.csc130.utils;
  */
-package io.github.csc130.utils;
+package main.io.github.csc130.utils;
 
 import java.io.BufferedReader;
 import java.io.IOException;

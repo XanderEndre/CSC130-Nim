@@ -1,6 +1,6 @@
-package io.github.csc130;
+package main.io.github.csc130;
 
-import io.github.csc130.game.Game;
+import main.io.github.csc130.game.Game;
 
 public class Main {
     public static void main(String[] args) {
