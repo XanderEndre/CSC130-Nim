@@ -39,6 +39,8 @@ public class MenuController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
 
     }
+
+
     @FXML
     private void loadSecond(ActionEvent event) throws IOException{
         //change scene set up(in class because I'm not sure why I can't pull it off in ChangeScene.java)
