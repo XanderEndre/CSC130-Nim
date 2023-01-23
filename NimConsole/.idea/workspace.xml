@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee83b038-bc99-443b-93f1-dda5b9610000" name="Changes" comment="" />
+    <list default="true" id="ee83b038-bc99-443b-93f1-dda5b9610000" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/CSC130-Nim.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/CSC130-Nim.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NimFX/src/io/github/csc130/nimfx/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../NimFX/src/io/github/csc130/nimfx/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,15 +48,23 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Xander/IdeaProjects/Object Orientated Programming/ConnectFour&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Xander/IdeaProjects/CSC130/Waterfall/CSC130-Nim&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Xander\IdeaProjects\CSC130\Waterfall\CSC130-Nim\NimConsole\src\main" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.github.csc130.Main" />
@@ -89,7 +102,12 @@
       <workItem from="1674057539891" duration="343000" />
       <workItem from="1674057946519" duration="257000" />
       <workItem from="1674073932064" duration="3475000" />
-      <workItem from="1674160917646" duration="1926000" />
+      <workItem from="1674160917646" duration="3511000" />
+      <workItem from="1674168015374" duration="822000" />
+      <workItem from="1674176647906" duration="99000" />
+      <workItem from="1674435740528" duration="16000" />
+      <workItem from="1674445969118" duration="1225000" />
+      <workItem from="1674489412947" duration="2660000" />
     </task>
     <servers />
   </component>

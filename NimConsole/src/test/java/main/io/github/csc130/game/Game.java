@@ -35,11 +35,12 @@ public class Game {
 		System.out.println("\n-----------------------------");
 
 		String gameType;
-
+		int difficulty = 0;
 		boolean gameActive = false;
 
 		do {
 			gameType = Utils.getString("Game Type: ");
+			//Utils.getInt("Select a difficulty (Easy, Medium, Hard)")
 			switch (gameType.toLowerCase()) {
 				case "pvp" -> {
 					players.add(new PlayerHuman(Utils.getString("Enter the first players name: ")));
