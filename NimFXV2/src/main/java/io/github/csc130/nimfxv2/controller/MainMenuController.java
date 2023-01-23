@@ -43,7 +43,7 @@ public class MainMenuController implements Initializable {
 
         gameDifficulty.getItems().add("Easy");
         gameDifficulty.getItems().add("Medium");
-        gameDifficulty.getItems().add("Difficult");
+        gameDifficulty.getItems().add("Hard");
     }
 
     @FXML

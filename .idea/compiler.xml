@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="NimConsole" />
         <module name="NimFX" />
+        <module name="NimFXV2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="NimConsole" target="18" />
       <module name="NimFX" target="18" />
+      <module name="NimFXV2" target="18" />
     </bytecodeTargetLevel>
   </component>
 </project>

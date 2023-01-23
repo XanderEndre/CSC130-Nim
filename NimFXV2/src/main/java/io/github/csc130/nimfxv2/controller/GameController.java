@@ -45,6 +45,8 @@ public class GameController implements Initializable {
         Platform.exit();
     }
 
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         // Grab all the local data saved
