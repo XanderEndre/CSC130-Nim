@@ -12,7 +12,10 @@ import io.github.csc130.nimfxv2.model.Player;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.VBox;
 import javafx.scene.text.Text;
@@ -45,7 +48,13 @@ public class GameController implements Initializable {
         Platform.exit();
     }
 
+    @FXML
+    void btnMainMenu(ActionEvent event) throws IOException{
+        Parent screen = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
+        Scene scene =  new Scene(screen);
 
+
+    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
