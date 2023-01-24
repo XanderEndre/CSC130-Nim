@@ -6,11 +6,13 @@
  */
 package io.github.csc130.nimfxv2.controller;
 
+import io.github.csc130.nimfxv2.ChangeScene;
 import io.github.csc130.nimfxv2.model.Game;
 import io.github.csc130.nimfxv2.model.GameHolder;
 import io.github.csc130.nimfxv2.model.Player;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -36,7 +38,10 @@ public class GameController implements Initializable {
     private int[] piles;
     private int turn;
     @FXML
-    private Button btnMainMenu, btnQuitGame;
+    private Button btnMainMenu;
+
+    @FXML
+    private Button btnQuitGame;
 
     @FXML
     private Text playerTurn;
@@ -48,13 +53,7 @@ public class GameController implements Initializable {
         Platform.exit();
     }
 
-    @FXML
-    void btnMainMenu(ActionEvent event) throws IOException{
-        Parent screen = FXMLLoader.load(getClass().getResource("main_menu.fxml"));
-        Scene scene =  new Scene(screen);
 
-
-    }
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -100,7 +99,22 @@ public class GameController implements Initializable {
                 //if (event.getText().equals("0"))
                 playerTurn.setText(players.get(turn).getName() + "'s turn!");
             });
+
+
         }
+
+        btnMainMenu.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                ChangeScene changeScene =  new ChangeScene();
+                try{
+                    changeScene.sceneChange(actionEvent, "main_menu.fxml");
+
+                } catch(IOException e){
+                    e.printStackTrace();
+                }
+            }
+        });
     }
 
     @FXML
